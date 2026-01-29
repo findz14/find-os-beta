@@ -49,13 +49,12 @@ modules:
           - org.gnome.Connections
           - org.gnome.Logs
           - org.gnome.Maps
-          - org.gnome.NautliusPreviewer
           - org.gnome.Papers
           - org.gnome.Snapshot
           - org.gnome.TextEditor
           - org.gnome.Weather
           - org.gnome.baobab
-          - org.gnome.Clocks
+          - org.gnome.clocks
           - org.gnome.font-viewer
           - org.fedoraproject.MediaWriter
           - com.spotify.Client
