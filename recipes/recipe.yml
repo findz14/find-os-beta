@@ -38,7 +38,7 @@ modules:
         - virt-top
         - virt-viewer
         - virt-install
-        
+
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -78,6 +78,8 @@ modules:
           - org.ardour.Ardour
           - org.audacityteam.Audacity
           - org.virt_manager.virt-manager
+          - org.libreoffice.LibreOffice
+          - com.vivaldi.Vivaldi
           
       - scope: user # Also add Flathub user repo, but no user packages
 
