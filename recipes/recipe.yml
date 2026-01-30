@@ -1,4 +1,3 @@
----
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
 name: find-os
@@ -14,8 +13,8 @@ modules:
   # select ONE of the following from-file line
   # or leave all three uncommented to use stock fedora kernel
   # ---
-  # - from-file: bazzite.yml 
-  - from-file: modules-recipes/cachy.yml  
+  - from-file: bazzite.yml 
+  #- from-file: modules-recipes/cachy.yml  
   - from-file: modules-recipes/dnf.yml
   - from-file: modules-recipes/flatpak.yml
   - from-file: modules-recipes/rpm-ostree.yml
