@@ -26,7 +26,7 @@ modules:
         - virt-top
         - virt-viewer
         - virt-install
-        - firewall
+        - firewall-config
 
     remove:
       packages:
