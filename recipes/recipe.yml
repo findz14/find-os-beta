@@ -10,15 +10,16 @@ base-image: ghcr.io/ublue-os/silverblue-main
 image-version: 43 # latest is also supported if you want new updates ASAP
 
 modules:
-  - from-file: modules-recipes/dnf.yml
-  - from-file: modules-recipes/flatpak.yml
-  - from-file: modules-recipes/rpm-ostree.yml
-    # kernel selection
+  # kernel selection
   # select ONE of the following from-file line
   # or leave all three uncommented to use stock fedora kernel
   # ---
   # - from-file: bazzite.yml 
-  - from-file: modules-recipes/cachy.yml
+  - from-file: modules-recipes/cachy.yml  
+  - from-file: modules-recipes/dnf.yml
+  - from-file: modules-recipes/flatpak.yml
+  - from-file: modules-recipes/rpm-ostree.yml
+  
 
 
   # image-specific packages module
