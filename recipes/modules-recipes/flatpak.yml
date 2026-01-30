@@ -1,33 +1,40 @@
+
 type: default-flatpaks
-notify: true # Send notification after install/uninstall is finished (true/false)
-system:
-  # If no repo information is specified, Flathub will be used by default
-  install: # system flatpaks we want all users to have and not remove
-    - org.mozilla.firefox
-    - org.gnome.Loupe
-    - org.gnome.Calculator
-    - org.gnome.Calendar
-    - org.gnome.Characters
-    - com.mattjakeman.ExtensionManager
-    - org.gnome.Contacts
-    - org.gnome.Connections
-    - org.gnome.Logs
-    - org.gnome.Maps
-    - org.gnome.Papers
-    - org.gnome.Snapshot
-    - org.gnome.TextEditor
-    - org.gnome.Weather
-    - org.gnome.baobab
-    - org.gnome.clocks
-    - org.gnome.font-viewer
-    - org.fedoraproject.MediaWriter
-    - com.spotify.Client
-    - com.visualstudio.code
-    - com.discordapp.Discord
-    - com.usebottles.bottles
-    - com.bitwarden.desktop
-    - org.ardour.Ardour
-    - org.audacityteam.Audacity
-    - org.virt_manager.virt-manager
-    - org.libreoffice.LibreOffice
-    - com.vivaldi.Vivaldi
+configurations:
+  - scope: user
+    repo:
+      # you can override the title to make inclusion of both system and user repos clearer
+      title: Flathub (user)
+  - notify: true
+    scope: system
+    repo:
+      title: Flathub (system)
+    install: # system flatpaks we want all users to have and not remove
+      - org.mozilla.firefox
+      - org.gnome.Loupe
+      - org.gnome.Calculator
+      - org.gnome.Calendar
+      - org.gnome.Characters
+      - com.mattjakeman.ExtensionManager
+      - org.gnome.Contacts
+      - org.gnome.Connections
+      - org.gnome.Logs
+      - org.gnome.Maps
+      - org.gnome.Papers
+      - org.gnome.Snapshot
+      - org.gnome.TextEditor
+      - org.gnome.Weather
+      - org.gnome.baobab
+      - org.gnome.clocks
+      - org.gnome.font-viewer
+      - org.fedoraproject.MediaWriter
+      - com.spotify.Client
+      - com.visualstudio.code
+      - com.discordapp.Discord
+      - com.usebottles.bottles
+      - com.bitwarden.desktop
+      - org.ardour.Ardour
+      - org.audacityteam.Audacity
+      - org.virt_manager.virt-manager
+      - org.libreoffice.LibreOffice
+      - com.vivaldi.Vivaldi
