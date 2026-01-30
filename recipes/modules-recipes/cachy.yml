@@ -1,7 +1,7 @@
 modules:
   - type: script
     scripts:
-    - kernels/kernel-cachy.sh
+    - kernel-cachy.sh
 
   - type: systemd
     system:
