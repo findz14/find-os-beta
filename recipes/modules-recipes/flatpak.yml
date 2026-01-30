@@ -1,5 +1,4 @@
-
-- type: default-flatpaks
+type: default-flatpaks
   configurations:
     - notify: true # Send notification after install/uninstall is finished (true/false)
       scope: system
