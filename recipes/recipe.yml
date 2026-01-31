@@ -13,7 +13,7 @@ modules:
   # select ONE of the following from-file line
   # or leave all three uncommented to use stock fedora kernel
   # ---
-  - from-file: modules-recipes/bazzite.yml 
+  #- from-file: modules-recipes/bazzite.yml 
   #- from-file: modules-recipes/cachy.yml  
   - from-file: modules-recipes/dnf.yml
   - from-file: modules-recipes/flatpak.yml
