@@ -6,14 +6,14 @@ description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/kinoite-main
-image-version: 43 # latest is also supported if you want new updates ASAP
+image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
   # kernel selection
   # select ONE of the following from-file line
   # or leave all three uncommented to use stock fedora kernel
   # ---
-  #- from-file: modules-recipes/bazzite.yml 
+  - from-file: modules-recipes/bazzite.yml 
   #- from-file: modules-recipes/cachy.yml  
   #- from-file: modules-recipes/dnf.yml
   #- from-file: modules-recipes/flatpak.yml
