@@ -15,11 +15,8 @@ modules:
   # ---
   #- from-file: modules-recipes/bazzite.yml 
   #- from-file: modules-recipes/cachy.yml  
-<<<<<<< HEAD
   - from-file: modules-recipes/dnf.yml
-=======
   #- from-file: modules-recipes/dnf.yml
->>>>>>> d32e4f83c9084dce3907775535c18fba9ec4e2fa
   #- from-file: modules-recipes/flatpak.yml
   #- from-file: modules-recipes/rpm-ostree.yml
   #- from-file: modules-recipes/codecs.yml
