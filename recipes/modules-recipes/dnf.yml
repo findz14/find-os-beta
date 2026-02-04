@@ -1,3 +1,4 @@
+
 modules:
   - type: files
     files:
@@ -11,6 +12,10 @@ modules:
         
     install:
       packages:
+        - micro
+        - starship
+        #- gnome-tweaks
+        #- wireshark
         #- gns3-gui
         #- gns3-server
         #- iptables
@@ -22,11 +27,11 @@ modules:
         #- virt-top
         #- virt-viewer
         #- virt-install
+        #- firewall-config
 
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
-        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
-        - gnome-software
+        - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case
