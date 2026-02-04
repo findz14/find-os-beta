@@ -27,11 +27,11 @@ configurations:
       - org.gnome.clocks
       - org.gnome.font-viewer
       - org.fedoraproject.MediaWriter
-      - org.fedoraproject.Platform.CL.default
-      - org.fedoraproject.Platform.GL.default
-      - org.fedoraproject.Platform.Locale
-      - org.fedoraproject.Platform.VAAPI.Intel
-      - org.freedesktop.Platform.GL.default
+      #- org.fedoraproject.Platform.CL.default
+      #- org.fedoraproject.Platform.GL.default
+      #- org.fedoraproject.Platform.Locale
+      #- org.fedoraproject.Platform.VAAPI.Intel
+      #- org.freedesktop.Platform.GL.default
       - org.freedesktop.Platform.GL.default
       - org.freedesktop.Platform.VAAPI.Intel 
       - org.freedesktop.Platform.codecs-extra
