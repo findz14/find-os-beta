@@ -17,7 +17,7 @@ modules:
   #- from-file: modules-recipes/cachy.yml  
   - from-file: modules-recipes/dnf.yml
   #- from-file: modules-recipes/dnf.yml
-  - from-file: modules-recipes/flatpak.yml
+  - from-file: modules-recipes/default-flatpak.yml
   #- from-file: modules-recipes/rpm-ostree.yml
   #- from-file: modules-recipes/codecs.yml
   
