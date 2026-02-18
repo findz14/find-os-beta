@@ -8,20 +8,20 @@ modules:
   - type: dnf
     repos:
       copr:
-        - atim/starship
+        #- atim/starship
         
     install:
       packages:
-        - micro
-        - starship
+        #- micro
+        #- starship
         #- gnome-tweaks
-        - wireshark
-        - gns3-gui
-        - gns3-server
+        #- wireshark
+        #- gns3-gui
+        #- gns3-server
         #- iptables
         #- libvirt-daemon-config-network
         #- libvirt-daemon-kvm
-        - qemu-kvm   
+        #- qemu-kvm   
         #- libguestfs-tools
         #- python3-libguestfs
         #- virt-top
@@ -35,4 +35,7 @@ modules:
         # "firefox" is the main package, "firefox-langpacks" is a dependency
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case
-        - gnome-software
+        #- gnome-software
+        - waydroid
+        - sunshine
+        - extensions
