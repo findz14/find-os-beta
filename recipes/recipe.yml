@@ -15,9 +15,8 @@ modules:
   # ---
   #- from-file: modules-recipes/bazzite.yml 
   #- from-file: modules-recipes/cachy.yml  
-  #- from-file: modules-recipes/dnf.yml
+  - from-file: modules-recipes/dnf.yml
   #- from-file: modules-recipes/flatpak.yml
-  #- from-file: modules-recipes/codecs.yml
 
   # image-specific packages module
   # base/core packages are all handled by solarpowered-raw

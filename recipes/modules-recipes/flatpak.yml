@@ -5,11 +5,6 @@
       repo:
         # you can override the title to make inclusion of both system and user repos clearer
         title: Flathub (user)
-      install: # user flatpaks
-        - com.valvesoftware.Steam
-        - com.spotify.Client
-        - com.heroicgameslauncher.hgl
-        - com.discordapp.Discord
     - notify: true
       scope: system
       repo:
@@ -20,3 +15,7 @@
         - io.github.flattool.Warehouse
         - page.tesk.Refine
         - io.github.kolunmi.Bazaar
+        - com.valvesoftware.Steam
+        - com.spotify.Client
+        - com.heroicgameslauncher.hgl
+        - com.discordapp.Discord
