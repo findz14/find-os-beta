@@ -1,10 +1,13 @@
-# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 - type: default-flatpaks
   configurations:
     - scope: user
       repo:
         # you can override the title to make inclusion of both system and user repos clearer
         title: Flathub (user)
+      install: # user flatpaks
+        - com.spotify.Client
+        - com.discordapp.Discord
+        - com.heroicgameslauncher.hgl
     - notify: true
       scope: system
       repo:
@@ -13,9 +16,7 @@
         - org.mozilla.firefox
         - com.github.tchx84.Flatseal
         - io.github.flattool.Warehouse
-        - page.tesk.Refine
+        - io.missioncenter.MissionCenter
+        - com.github.rafostar.Clapper
+        - org.gnome.Loupe
         - io.github.kolunmi.Bazaar
-        - com.valvesoftware.Steam
-        - com.spotify.Client
-        - com.heroicgameslauncher.hgl
-        - com.discordapp.Discord
