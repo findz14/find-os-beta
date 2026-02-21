@@ -5,7 +5,7 @@ name: find-os
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: latest # latest is also supported if you want new updates ASAP
 
 modules:
@@ -17,45 +17,6 @@ modules:
   #- from-file: modules-recipes/cachy.yml  
   - from-file: modules-recipes/dnf.yml
   #- from-file: modules-recipes/flatpak.yml
-
-  - type: default-flatpaks
-    configurations:
-      - scope: user
-        repo:
-          # you can override the title to make inclusion of both system and user repos clearer
-          title: Flathub (user)
-      - notify: false
-        scope: system
-        repo:
-          title: Flathub (system)
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-          - com.github.tchx84.Flatseal
-          - io.github.flattool.Warehouse
-          - io.missioncenter.MissionCenter
-          - org.gnome.Loupe
-          - io.github.kolunmi.Bazaar
-          - com.spotify.Client
-          - com.discordapp.Discord
-          - com.heroicgameslauncher.hgl
-          - org.gnome.Loupe
-          - org.gnome.Calculator
-          - org.gnome.Calendar
-          - org.gnome.Characters
-          - com.mattjakeman.ExtensionManager
-          - org.gnome.Contacts
-          - org.gnome.Connections
-          - org.gnome.Logs
-          - org.gnome.Maps
-          - org.gnome.Papers
-          - org.gnome.Snapshot
-          - org.gnome.TextEditor
-          - org.gnome.Weather
-          - org.gnome.baobab
-          - org.gnome.clocks
-          - org.gnome.font-viewer
-          - org.fedoraproject.MediaWriter
-          - org.gnome.TextEditor
 
   # image-specific packages module
   # base/core packages are all handled by solarpowered-raw
