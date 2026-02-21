@@ -15,7 +15,7 @@ modules:
   # ---
   - from-file: modules-recipes/bazzite.yml 
   #- from-file: modules-recipes/cachy.yml  
-  - from-file: modules-recipes/dnf.yml
+  #- from-file: modules-recipes/dnf.yml
   #- from-file: modules-recipes/flatpak.yml
 
   # image-specific packages module
